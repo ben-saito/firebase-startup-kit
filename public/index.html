@@ -19,10 +19,9 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>Firebase Rocks!</title>
+    <title>file uploader!!!</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -34,5 +33,19 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <div>
+  <div>
+  <!-- autocomplete="off"でformの候補をなくす -->
+  　　　　　<form autocomplete="off">
+   　　　　　<input type="file" id="setfile">
+   　　　　　<input type="submit" value="upload">
+   </form>
+   <div id="imgSample" style="width: 200px; height: 200px; background-size:100% auto; background-position : 50% 50%;"></div>
+   <div id="ImageGridList"></div>
+  </div>
+ <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-storage.js"></script>
+ <script src="js/index.js"></script>
   </body>
 </html>
